@@ -12,6 +12,22 @@ Pelican-iliork is built on [Bootstrap][] version 3.0. Some notable features are:
 
 You can get a live demo at [iliork][], using [flatly][], mainly in Chinese. For more demos, see [Screen Shots][] below.
 
+# Why did you fork it?
+
+As far as I can tell, there is nothing in the current version of Pelican that allows you to override a specific part of the theme. Additionally -- I assume (?) because it was originally intended for use on Chinese language websites, pelican-iliork contains the following line:
+
+	p {
+		word-break: break-all;
+		/*hyphens: auto;*/
+		/*-ms-hyphens: auto;*/
+		/*-webkit-hyphens: auto;*/
+		/*-moz-hyphens: auto;*/
+	}
+
+Making it impossible to read any text on the site I'm using this in. So, much to my chagrin, I had to fork the original and hack on it in order to comment out a single line.
+
+Additionally, I'll probably add some site-specific templates.
+
 # Features
 
 ## Use Bootstrap Theme
@@ -115,4 +131,3 @@ pelican-iliork with [united][]
 [superhero]: http://bootswatch.com/superhero/
 [united]: http://bootswatch.com/united/
 [Screen Shots]: #screen-shots
-

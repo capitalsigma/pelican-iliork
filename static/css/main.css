@@ -187,7 +187,7 @@ td.code {
 }
 
 p {
-  word-break: break-all;
+  /* word-break: break-all; */
   /*hyphens: auto;*/
   /*-ms-hyphens: auto;*/
   /*-webkit-hyphens: auto;*/
